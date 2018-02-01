@@ -49,3 +49,28 @@ html,body {
     font-family: 'bebas_neueregular';
     text-align: center;
 }
+#p3Title {
+   background: rgba(0,0,0,0.5);
+   width:auto;
+   border-style:solid;
+   color: white;
+   margin-right: auto;
+   margin-left: auto; 
+}
+#p3Title > h1,h2{
+    font-family: 'bebas_neueregular';
+    text-align: center;
+}
+#restaurants{
+    background: rgba(0,0,0,0.5);
+    width:auto;
+    border-style:solid;
+    color: white;
+    margin-right: auto;
+    margin-left: auto; 
+    display: flex;
+    justify-content: center;
+}
+#restaurants > ul {
+    list-style-type: none;
+}
