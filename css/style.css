@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/bebas/bebasneue-webfont.woff2') format('woff2'),
+         url('../fonts/bebas/bebasneue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html,body {
+    background-color: black;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.full-screen-image {
+    height: 100%;
+    background:no-repeat center;
+    background-size: cover;
+}
+#p1Title {
+    background: rgba(0,0,0,0.5);
+    width:auto;
+    border-style:solid;
+    color: white;
+    margin-right: auto;
+    margin-left: auto; 
+}
+#p1Title > h1,h2{
+    font-family: 'bebas_neueregular';
+    text-align: center;
+}
+#p1Title > h1 {
+    font-size: 5.5rem
+}
+#p1Title > h2 {
+    font-size:2.8em;
+    margin-top:-0.8em;
+}
+#p2Title {
+    background: rgba(0,0,0,0.5);
+    width:auto;
+    border-style:solid;
+    color: white;
+    margin-right: auto;
+    margin-left: auto; 
+}
+#p2Title > h1,h2{
+    font-family: 'bebas_neueregular';
+    text-align: center;
+}
