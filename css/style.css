@@ -73,4 +73,19 @@ html,body {
 }
 #restaurants > ul {
     list-style-type: none;
+    text-align: center;
+}
+#restaurants > ul {
+    list-style-type: none;
+    text-align: center;
+}
+#restaurants>.list-group > .list-group-item {
+    background: none !important;
+    border: none;
+    font-family: 'bebas_neueregular';
+    font-size:2rem
+}
+.list-group-item > a {
+    text-decoration: none;
+    color: white
 }
