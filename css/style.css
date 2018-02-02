@@ -56,7 +56,6 @@ html,body {
    color: white;
    margin-right: auto;
    margin-left: auto; 
-   margin-bottom: 1rem;
 }
 #p3Title > h1,h2{
     font-family: 'bebas_neueregular';
@@ -97,7 +96,6 @@ html,body {
     color: white;
     margin-right: auto;
     margin-left: auto; 
-    margin-bottom: -20rem;
  }
  #p4Title > h1,h2{
      font-family: 'bebas_neueregular';
@@ -109,8 +107,6 @@ html,body {
     grid-template-columns: auto auto;
     width: auto;
     margin: 0 auto;
-    margin-top: -30rem;
-
 }
 #page4 {
     vertical-align: middle;
@@ -124,5 +120,13 @@ html,body {
     margin: 0.5em;
     background-color:rgba(0,0,0,0.5);
     background: no-repeat center;
-    background-size: 4rem; 
+    background-size: 4rem;
+    transition: transform .2s;
+}
+.some-icon:hover {
+    transform: scale(150%);
+} 
+#p4 {
+    display: grid;
+    grid-template-columns: auto; 
 }

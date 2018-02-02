@@ -2,9 +2,142 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Aarhus2017: Gastronomi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+    @font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/bebas/bebasneue-webfont.woff2') format('woff2'),
+         url('../fonts/bebas/bebasneue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html,body {
+    background-color: black;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.full-screen-image {
+    height: 100%;
+    background:no-repeat center;
+    background-size: cover;
+}
+#p1Title {
+    background: rgba(0,0,0,0.5);
+    width:auto;
+    border-style:solid;
+    color: white;
+    margin-right: auto;
+    margin-left: auto; 
+}
+#p1Title > h1,h2{
+    font-family: 'bebas_neueregular';
+    text-align: center;
+}
+#p1Title > h1 {
+    font-size: 5.5rem
+}
+#p1Title > h2 {
+    font-size:2.8em;
+    margin-top:-0.8em;
+}
+#p2Title {
+    background: rgba(0,0,0,0.5);
+    width:auto;
+    border-style:solid;
+    color: white;
+    margin-right: auto;
+    margin-left: auto; 
+}
+#p2Title > h1,h2{
+    font-family: 'bebas_neueregular';
+    text-align: center;
+}
+#p3Title {
+   background: rgba(0,0,0,0.5);
+   width:auto;
+   border-style:solid;
+   color: white;
+   margin-right: auto;
+   margin-left: auto; 
+}
+#p3Title > h1,h2{
+    font-family: 'bebas_neueregular';
+    text-align: center;
+}
+#restaurants{
+    background: rgba(0,0,0,0.5);
+    width:auto;
+    border-style:solid;
+    color: white;
+    margin-right: auto;
+    margin-left: auto; 
+    display: flex;
+    justify-content: center;
+}
+#restaurants > ul {
+    list-style-type: none;
+    text-align: center;
+}
+#restaurants > ul {
+    list-style-type: none;
+    text-align: center;
+}
+#restaurants>.list-group > .list-group-item {
+    background: none !important;
+    border: none;
+    font-family: 'bebas_neueregular';
+    font-size:2rem
+}
+.list-group-item > a {
+    text-decoration: none;
+    color: white
+}
+#p4Title {
+    background: rgba(0,0,0,0.5);
+    width:auto;
+    border-style:solid;
+    color: white;
+    margin-right: auto;
+    margin-left: auto; 
+ }
+ #p4Title > h1,h2{
+     font-family: 'bebas_neueregular';
+     text-align: center;
+ }
+#socialmedia {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    width: auto;
+    margin: 0 auto;
+}
+#page4 {
+    vertical-align: middle;
+    text-align: center;
+}
+.some-icon {
+    width: 5em;
+    height: 5em;
+    border-style: solid;
+    color: white;
+    margin: 0.5em;
+    background: rgba(0,0,0,0.5) no-repeat center;
+    background-size: 4rem;
+    transition: all .2s ease-in-out;
+}
+.some-icon:hover {
+    transform: scale(1.2,1.2);
+} 
+#p4 {
+    display: grid;
+    grid-template-columns: auto; 
+}
+    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 </head>
@@ -41,7 +174,7 @@
             </div>
         </nav>
     </header>
-    <div class="full-screen-image" id="page1" style="background-image:url('img/page1.jpg')">
+    <div class="full-screen-image" id="page1" style="background-image:url('img/page1.jpg');Background-attachment: fixed;">
         <div class="h-100 row align-items-center text-center">
             <div class="container" id="p1Title">
                 <h1>GASTRONOMI</h1>
@@ -62,13 +195,13 @@
             </div>
         </div>
     </div>
-    <div class="full-screen-image" id="page3" style="background-image: url('img/page3.jpg');">
+    <div class="full-screen-image" id="page3" style="background-image: url('img/page3.jpg');Background-attachment: fixed;">
         <div class="h-100 row align-items-center text-center" >
             <div class="container" id="p3Title">
                 <h1 style="font-size: 5.2rem">Deltagende</h1>
                 <h1 style="font-size:4.2rem; margin-top: -0.4em;">Restauranter</h1>
                 <div>
-                    <p style="width:310px; font-family: 'Crimson Text', serif; font-style:italic; text-align: justify; margin-top:-1.0rem">
+                    <p class="d-none d-md-block" style="width:310px; font-family: 'Crimson Text', serif; font-style:italic; text-align: justify;">
                             Det gastronomiske niveau er højt i Aarhus, og byens kreative gourmetkokke går ikke på kompromis med kvaliteten. De fem restauranter byder blandt på det nye nordiske køkken og det franske køkken og udemærker sig ved at være både klassiske, moderne og eksperimenterende. -visitaarhus.dk
                     </p>
                 </div>
@@ -107,17 +240,19 @@
     <div class="full-screen-image" id="page4" style="background-image: url('img/page4.jpg');">
         
         <div class="h-100 row align-items-center">
-                <div class="container" id="p4Title">
-                    <h1 style="font-size: 3.65rem">Følg os</h1>
-                </div>
-                <div class="w-100" style="height:20px;"></div>
+            <div class="container" id="p4">
+            <div class="container" id="p4Title">
+                <h1 style="font-size: 3.65rem">Følg os</h1>
+            </div>
+            <div class="w-100" style="height:20px;"></div>
             <div class="container align-items-center" id="socialmedia">
                 <div class="some-icon" style="background-image: url('icons/facebook.png');">
                 </div>
-                <div class="some-icon" style="background-image: url('icons/facebook.png');"></div>
-                <div class="some-icon" style="background-image: url('icons/facebook.png');"></div>
-                <div class="some-icon" style="background-image: url('icons/facebook.png');"></div>
-         </div>
+                <div class="some-icon" style="background-image: url('icons/twitter.png');"></div>
+                <div class="some-icon" style="background-image: url('icons/instagram-logo.png');"></div>
+                <div class="some-icon" style="background-image: url('icons/youtube.png');"></div>
+            </div>
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
